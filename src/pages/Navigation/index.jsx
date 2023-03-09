@@ -7,9 +7,9 @@ import { Nav, NavLink, Wrapper } from "./styles";
 const Loyout = () => (
 	<Wrapper>
 		<Nav>
-			<NavLink to='/'>Home</NavLink>
-			<NavLink to='/About'>About</NavLink>
-			<NavLink to='/Statistics'>Statistics</NavLink>
+			<NavLink to={'/'}>Home</NavLink>
+			<NavLink to={'/about'}>About</NavLink>
+			<NavLink to={'/statistics'}>Statistics</NavLink>
 		</Nav>
 		<br />
 	<Outlet />

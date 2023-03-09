@@ -1,3 +1,35 @@
+### How to install React
+`npx create-react-app my-app`
+`cd my-app`
+`npm start`
+### How to install React Router
+`npm install react-router-dom`
+### How to install Props Type
+`npm install --save prop-types`
+### How to install Styled Component
+`npm install --save styled-components`
+### How to install StoryBook
+`npx storybook init`
+
+### How to run StoryBook
+`npm run storybook`
+
+<!-- ### How to install JEST (test)
+`npm install --save-dev jest` -->
+
+<!-- ### How to run JEST test
+`npm run test` -->
+### How to install testing-library/react
+`npm install --save-dev @testing-library/react`
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,36 +101,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### How to install React
-
-`npx create-react-app my-app`
-`cd my-app`
-`npm start`
-
-### How to install React Router
-
-`npm install react-router-dom`
-
-### How to install Props Type
-
-`npm install --save prop-types`
-
-### How to install Styled Component
-
-`npm install --save styled-components`
-
-### How to install StoryBook
-
-`npx storybook init`
-
-### How to run StoryBook
-
-`npm run storybook`
-
-<!-- ### How to install JEST (test)
-`npm install --save-dev jest` -->
-
-<!-- ### How to run JEST test
-`npm run test` -->
-### How to install testing-library/react
-`npm install --save-dev @testing-library/react`

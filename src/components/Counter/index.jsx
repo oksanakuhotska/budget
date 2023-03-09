@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Counter = () => {
 	const [clicks, setClicks] = useState(0);
@@ -9,6 +9,13 @@ const Counter = () => {
 			alert(clicks);
 		}, 3000)
 	};
+
+	useEffect(() => {
+		console.log('rendererer', clicks, step);
+		document.title =`Clicked ${clicks} times`;
+
+		setStep((prevValue) => prevValue + 1);
+	}, [clicks, setStep]);
 
 	return(
 		<div>

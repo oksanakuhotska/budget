@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
 	createBrowserRouter,
 	RouterProvider,
@@ -6,10 +5,10 @@ import {
 
 import { open } from '../../utils/indexdb';
 
-import Home from '../Home';
-import About from '../About';
-import Statistics from '../Statistics';
-import Navigation from '../Navigation';
+import Home from '../../pages/Home';
+import About from '../../pages/About';
+import Statistics from '../../pages/Statistics';
+import Navigation from '../../pages/Navigation';
 import { GlobalStyle } from './styles';
 
 export const router = createBrowserRouter([
@@ -18,7 +17,6 @@ export const router = createBrowserRouter([
 		element: <Navigation />,
 		children: [
 			{
-				path: '/',
 				element: <Home />,
 				index: true,
 			},
@@ -34,37 +32,14 @@ export const router = createBrowserRouter([
 	},
 ]);
 
-class App extends React.Component {
-	constructor(props) {
-		super(props);
+const App = () => {
 
-		this.state = {
-			loading: true,
-		}
-	}
-
-	componentDidMount() {
-		open().then(() => {
-			this.setState({
-				loading: false,
-			}).catch(() => {
-				console.error('Error happened')
-			})
-		});
-	}
-
-	render() {
-		if (this.state.loading) {
-			return <div>Loading...</div>
-		};
-
-		return (
-			<>
-				<GlobalStyle />
-				<RouterProvider router={router} />
-			</>
-		)
-	}
+	return (
+		<>
+			<GlobalStyle />
+			<RouterProvider router={router} />
+		</>
+	)
 }
 
 export default App;
